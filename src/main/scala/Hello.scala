@@ -1,3 +1,6 @@
 object Hello extends App {
-  println("hello")
+  args.zipWithIndex foreach {
+    case (arg, i) =>
+      println(s"$i: $arg")
+  }
 }
